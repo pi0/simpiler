@@ -1,5 +1,10 @@
-Programmers : Pooya Parsa
+Programmers : 
+  Pooya Parsa
 
-Thanks to : Dr.Shiri - Amirkabir university of technology Mahdi Shooshtari Mohsen Ansari
+Thanks to : 
+  Dr.Shiri
+  Mahdi Shooshtari
+  Mohsen Ansari
 
-This Code is distrubuted under GPL license. @ 2013-2014
+This Code is publicaly shared under GPL license
+@2013-2014
