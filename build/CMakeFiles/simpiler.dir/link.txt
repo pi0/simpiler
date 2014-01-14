@@ -1,0 +1,1 @@
+/usr/lib64/ccache/cc  -g    CMakeFiles/simpiler.dir/src/cgenerator.c.o CMakeFiles/simpiler.dir/src/cglobal.c.o CMakeFiles/simpiler.dir/src/clog.c.o CMakeFiles/simpiler.dir/src/cparser.c.o CMakeFiles/simpiler.dir/src/ctoken.c.o CMakeFiles/simpiler.dir/src/cvar.c.o CMakeFiles/simpiler.dir/src/main.c.o  -o simpiler -rdynamic 

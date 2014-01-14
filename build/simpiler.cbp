@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="simpiler" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/mnt/c/@Data/Projects/Simpiler/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/mnt/c/@Data/Projects/Simpiler/build/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/mnt/c/@Data/Projects/Simpiler/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/mnt/c/@Data/Projects/Simpiler/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/mnt/c/@Data/Projects/Simpiler/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/mnt/c/@Data/Projects/Simpiler/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/mnt/c/@Data/Projects/Simpiler/build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/mnt/c/@Data/Projects/Simpiler/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/mnt/c/@Data/Projects/Simpiler/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/mnt/c/@Data/Projects/Simpiler/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="simpiler">
+         <Option output="/mnt/c/@Data/Projects/Simpiler/build/simpiler" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/mnt/c/@Data/Projects/Simpiler/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../include/c++/4.8.2" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../include/c++/4.8.2/backward" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../include/c++/4.8.2/x86_64-redhat-linux" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/mnt/c/@Data/Projects/Simpiler/build/Makefile&quot;  VERBOSE=1 simpiler" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/mnt/c/@Data/Projects/Simpiler/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/mnt/c/@Data/Projects/Simpiler/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/mnt/c/@Data/Projects/Simpiler/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="simpiler/fast">
+         <Option output="/mnt/c/@Data/Projects/Simpiler/build/simpiler" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/mnt/c/@Data/Projects/Simpiler/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../include/c++/4.8.2" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../include/c++/4.8.2/backward" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../include/c++/4.8.2/x86_64-redhat-linux" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/mnt/c/@Data/Projects/Simpiler/build/Makefile&quot;  VERBOSE=1 simpiler/fast" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/mnt/c/@Data/Projects/Simpiler/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/mnt/c/@Data/Projects/Simpiler/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/mnt/c/@Data/Projects/Simpiler/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/mnt/c/@Data/Projects/Simpiler/src/cgenerator.c">
+      </Unit>
+      <Unit filename="/mnt/c/@Data/Projects/Simpiler/src/cglobal.c">
+      </Unit>
+      <Unit filename="/mnt/c/@Data/Projects/Simpiler/src/clog.c">
+      </Unit>
+      <Unit filename="/mnt/c/@Data/Projects/Simpiler/src/cparser.c">
+      </Unit>
+      <Unit filename="/mnt/c/@Data/Projects/Simpiler/src/ctoken.c">
+      </Unit>
+      <Unit filename="/mnt/c/@Data/Projects/Simpiler/src/cvar.c">
+      </Unit>
+      <Unit filename="/mnt/c/@Data/Projects/Simpiler/src/main.c">
+      </Unit>
+      <Unit filename="/mnt/c/@Data/Projects/Simpiler/src/cgenerator.h">
+      </Unit>
+      <Unit filename="/mnt/c/@Data/Projects/Simpiler/src/cglobal.h">
+      </Unit>
+      <Unit filename="/mnt/c/@Data/Projects/Simpiler/src/clog.h">
+      </Unit>
+      <Unit filename="/mnt/c/@Data/Projects/Simpiler/src/cparser.h">
+      </Unit>
+      <Unit filename="/mnt/c/@Data/Projects/Simpiler/src/ctoken.h">
+      </Unit>
+      <Unit filename="/mnt/c/@Data/Projects/Simpiler/src/cvar.h">
+      </Unit>
+      <Unit filename="/mnt/c/@Data/Projects/Simpiler/src/main.h">
+      </Unit>
+      <Unit filename="/mnt/c/@Data/Projects/Simpiler/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

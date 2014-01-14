@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/@Data/Projects/Simpiler/src/cglobal.c
+string.h
+-
+stdlib.h
+-
+stdarg.h
+-
+cglobal.h
+/mnt/c/@Data/Projects/Simpiler/src/cglobal.h
+
+/mnt/c/@Data/Projects/Simpiler/src/cglobal.h
+
