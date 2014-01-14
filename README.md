@@ -1,3 +1,20 @@
+Simpiler
+...A simple c compiler for SPIM !
+
+Usage : simpiler [OPTION] .... 
+
+
+
+Arguments:
+-i file 		 Input file
+-o file 		 Output file
+-t 			 Dumps token list to stdout
+-h 			 Show  help
+
+* argument -i is mondatory
+
+Report bugs to pyapar[at]g!
+
 Programmers : 
   Pooya Parsa
 
