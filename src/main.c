@@ -33,6 +33,8 @@ int main(int argc,char* args[])
     char* code;
 
     int DumpTokens=0;
+    int DumpVars=0;
+
 
     //Parse arguments
 
@@ -47,6 +49,7 @@ int main(int argc,char* args[])
         case 'i' : inpname=args[++i]; break;
         case 'o' : outname=args[++i]; break;
         case 't' : DumpTokens=1;break;
+        case 'v' : DumpVars=1;break;
         case 'h': ShowHelp ();return 0;
         }
 
@@ -93,10 +96,13 @@ int main(int argc,char* args[])
 
     ParseTokens(&tokens,&logger,&vars,&gen);
 
+    if(DumpVars)
+        DumpVarList(&vars,stdout);
+
     g_dump(&gen,outstream);
     fclose (outstream);
 
-    printf("Successfully compiled!\n");
+    printf("Successful run ! \n");
 
     return 0;
 }
@@ -109,6 +115,7 @@ void ShowHelp()
              "-i file \t\t Input file\n"
              "-o file \t\t Output file\n"
              "-t \t\t\t Dumps token list to stdout\n"
+             "-s\t\t\t Dumps symbols list to stdout\n"
              "-h \t\t\t Show this help\n\n"
              "argument -i is mondatory\n\n"
              "Report bugs to pyapar@gmail.com\n\n"

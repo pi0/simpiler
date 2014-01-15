@@ -20,6 +20,16 @@
 
 #include "cvar.h"
 #include "ctoken.h"
+#include "cglobal.h"
+
+static int2string_map_item VarTypeNames[]={
+    {"float",cvar_float },
+    {"Int32",cvar_int},
+    {"string",cvar_string},
+    {"UNKNOWN",cvar_error},
+
+    {"",-1}
+};
 
 void cvarInit(cvar* v)
 {
@@ -101,9 +111,9 @@ void ConvertLiteralsToVar(cTokenList* tokens,cvar_list* vars)
         {
             for(i=0;ConstValues[i][0]!=0;i++)
                 if(curr->data.i==ConstValues[i][0]){
-                   v.Value.i=ConstValues[i][1];
-                   v.Type=cvar_int;
-                   convert=1;
+                    v.Value.i=ConstValues[i][1];
+                    v.Type=cvar_int;
+                    convert=1;
                 }
         }
 
@@ -126,18 +136,24 @@ void ConvertLiteralsToVar(cTokenList* tokens,cvar_list* vars)
 void  DumpVarList ( cvar_list* list, FILE* str)
 {
     cvar* v;
+    printf("variables list:\n");
+    printf("---------------------\n");
+    printf("%15.20s\t%15.20s\t%15.20s\n\n","Name","Type","Value");
+
     for(v=list->first_item;v!=NULL;v=v->next)
-        fprintf(str,"Variable %s\n",v->Name);
+        printf("%15.20s\t%15.20s\t%15.20s\n",v->Name,GetMapKey (VarTypeNames,v->Type),
+               v->Type==cvar_string?__("\"%\"",v->Value.s):itoa (v->Value.i));
+
     printf("\n\n");
 }
 
 cvar* GetVarByToken(cToken* token,cvar_list* vars,clog* logger)
 {
     cvar* v=NULL;
-   if(token!=NULL) {
-       v = cvarGetItem (vars,token->data.s);
-       if(v==NULL)
-           LogError (logger,token,"ID is not defined");
-   }
-   return v;
+    if(token!=NULL) {
+        v = cvarGetItem (vars,token->data.s);
+        if(v==NULL)
+            LogError (logger,token,"ID is not defined");
+    }
+    return v;
 }

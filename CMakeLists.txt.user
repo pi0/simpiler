@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 3.0.0, 2014-01-14T22:51:08. -->
+<!-- Written by QtCreator 3.0.0, 2014-01-15T12:36:26. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -150,7 +150,7 @@
      <value type="int">14</value>
     </valuelist>
     <value type="QString" key="CMakeProjectManager.CMakeRunConfiguation.Title">simpiler</value>
-    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.Arguments">-i test.c -o /dev/null</value>
+    <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.Arguments">-i ../samples/fibo.c -o fibo.s -v</value>
     <value type="bool" key="CMakeProjectManager.CMakeRunConfiguration.UseTerminal">true</value>
     <value type="QString" key="CMakeProjectManager.CMakeRunConfiguration.UserWorkingDirectory"></value>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>

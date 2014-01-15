@@ -4,7 +4,7 @@
 main:
 
 ## Load variables
-lw $t0,var_xfdc
+lw $t0,var_xkld
 move $t1,$0
 
 ## add
@@ -12,7 +12,7 @@ add $t2,$t0,$t1
 sw $t2,var_c
 
 ## Load variables
-lw $t0,var_xfid
+lw $t0,var_xaue
 move $t1,$0
 
 ## add
@@ -20,7 +20,7 @@ add $t2,$t0,$t1
 sw $t2,var_a
 
 ## Load variables
-lw $t0,var_xfnd
+lw $t0,var_xpef
 move $t1,$0
 
 ## add
@@ -28,21 +28,21 @@ add $t2,$t0,$t1
 sw $t2,var_b
 
 ## While Start
-WhileStart_xure:
+WhileStart_xakg:
 
 ## Load variables
 lw $t0,var_c
-lw $t1,var_xaaf
+lw $t1,var_xkvh
 
 ## slt
 slt $t2,$t0,$t1
 
 ## Check while condition
-beqz $t2,WhileEnd_xure
+beqz $t2,WhileEnd_xakg
 
 ## Load variables
 lw $t0,var_c
-lw $t1,var_xakg
+lw $t1,var_xauj
 
 ## add
 add $t2,$t0,$t1
@@ -87,12 +87,12 @@ sw $t2,var_a
 
 ## print string
 li $v0,4
-la $a0,var_xuhkb
+la $a0,var_xaptb
 syscall
-j WhileStart_xure
+j WhileStart_xakg
 
 ## End of while
-WhileEnd_xure:
+WhileEnd_xakg:
 
 ## tell system to terminate application
 exit:
@@ -103,12 +103,12 @@ syscall
 
 ## Allocate and label memory for variables
 .data
-var_xfdc:	.word 0
-var_xfid:	.word 1
-var_xfnd:	.word 1
-var_xaaf:	.word 20
-var_xakg:	.word 1
-var_xuhkb:	.asciiz ","
+var_xkld:	.word 0
+var_xaue:	.word 1
+var_xpef:	.word 1
+var_xkvh:	.word 20
+var_xauj:	.word 1
+var_xaptb:	.asciiz ","
 var_a:	.word 0
 var_b:	.word 0
 var_c:	.word 0
